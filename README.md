@@ -1,11 +1,14 @@
-# Chokidar [![Mac/Linux Build Status](https://img.shields.io/travis/paulmillr/chokidar/master.svg?label=Mac%20OSX%20%26%20Linux)](https://travis-ci.org/paulmillr/chokidar) [![Windows Build status](https://img.shields.io/appveyor/ci/es128/chokidar/master.svg?label=Windows)](https://ci.appveyor.com/project/es128/chokidar/branch/master) [![Coverage Status](https://coveralls.io/repos/paulmillr/chokidar/badge.svg)](https://coveralls.io/r/paulmillr/chokidar) [![Join the chat at https://gitter.im/paulmillr/chokidar](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/paulmillr/chokidar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Chokidar [![Mac/Linux Build Status](https://img.shields.io/travis/joeybaker/chokidar/master.svg?label=Mac%20OSX%20%26%20Linux)](https://travis-ci.org/joeybaker/chokidar) [![Windows Build status](https://img.shields.io/appveyor/ci/es128/chokidar/master.svg?label=Windows)](https://ci.appveyor.com/project/es128/chokidar/branch/master) [![Coverage Status](https://coveralls.io/repos/joeybaker/chokidar/badge.svg)](https://coveralls.io/r/joeybaker/chokidar) [![Join the chat at https://gitter.im/joeybaker/chokidar](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/joeybaker/chokidar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > A neat wrapper around node.js fs.watch / fs.watchFile / fsevents.
 
 [![NPM](https://nodei.co/npm-dl/chokidar.png)](https://nodei.co/npm/chokidar/)
 [![NPM](https://nodei.co/npm/chokidar.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/chokidar/)
 
-#### [See what's new in v1.0](https://github.com/paulmillr/chokidar/blob/master/CHANGELOG.md#chokidar-100-7-april-2015)
+#### [See what's new in v1.0](https://github.com/joeybaker/chokidar/blob/master/CHANGELOG.md#chokidar-100-7-april-2015)
+
+## THIS IS A FORK
+The intention of this fork is to maintain feature parity with upstream [Chokidar](https://github.com/paulmillr/chokidar), but use [graceful-fs](https://github.com/isaacs/node-graceful-fs) instead of the node builtin `fs` module to prevent `EMFILE` errors. [This may not always be desirable behavior](https://github.com/paulmillr/chokidar/issues/141), but it works well for my usecase with [watchify](https://github.com/substack/watchify).
 
 ## Why?
 Node.js `fs.watch`:
